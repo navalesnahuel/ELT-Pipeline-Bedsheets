@@ -1,0 +1,7 @@
+name: 'bedsheets'
+profile: 'bedsheets'
+
+models:
+  materialized: table
+
+

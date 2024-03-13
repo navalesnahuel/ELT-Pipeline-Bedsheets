@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: customers_profit
+    description: Customers profits table
+    columns:
+      - name: customer_id
+        description: Customer id column
+        tests:
+          - not_null
+
+
+  - name: monthly_profit
+    description: Monthly profits table
+    columns:
+      - name: year_month
+        description: Date column
+        tests:
+          - not_null
+          - unique
+      - name: profit
+        description: Profit column
+        tests:
+          - not_null
+
+
+  - name: products_profit
+    description: Products profit table
+    columns:
+      - name: product_id
+        description: Unique product id column
+        tests:
+          - not_null
+          - unique
+      
+        

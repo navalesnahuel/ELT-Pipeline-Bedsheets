@@ -1,0 +1,12 @@
+bedsheets:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: /usr/local/airflow/include/gcp-keys/service_account.json
+    project: project-412401
+    dataset: bedsheets
+    threads: 1
+    timeout_seconds: 300
+    location: US

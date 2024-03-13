@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: customers
+    description: Customers table
+    columns:
+      - name: customer_id
+        description: Unique id
+        tests:
+          - not_null
+          - unique
+
+  - name: orders
+    description: Orders table
+    columns:
+      - name: order_id
+        description: Unique Id
+        tests:
+          - not_null
+          - unique
+          
+  - name: products
+    description: Products table
+    columns:
+      - name: product_id
+        description: Unique Id
+        tests:
+          - not_null
+          - unique
+        

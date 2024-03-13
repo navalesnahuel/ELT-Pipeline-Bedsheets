@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: bedsheets
+    database: project-412401 # Put the project id!
+    schema: raw_bedsheets
+
+    tables:
+      - name: raw_categories
+        description: "Table containing raw category data."
+
+      - name: raw_customers
+        description: "Table containing raw customer data."
+
+      - name: raw_materials
+        description: "Table containing raw material data."
+
+      - name: raw_orders
+        description: "Table containing raw order data."
+
+      - name: raw_products
+        description: "Table containing raw product data."
+
+      - name: raw_sizes
+        description: "Table containing raw size data."

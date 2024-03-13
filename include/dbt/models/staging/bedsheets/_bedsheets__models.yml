@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: stg_bedsheets__categories
+    description: Full bedsheets store categories data.
+    columns:
+      - name: category_id
+        description: "Unique identifier for the category."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_bedsheets__customers
+    description: Full bedsheets store customers data.
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_bedsheets__materials
+    description: Full bedsheets store materials data.
+    columns:
+      - name: material_id
+        description: "Unique identifier for the material."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_bedsheets__orders
+    description: Full bedsheets store orders data.
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_bedsheets__products
+    description: Full bedsheets store products data.
+    columns:
+      - name: product_id
+        description: "Unique identifier for the product."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_bedsheets__sizes
+    description: Full bedsheets store sizes data.
+    columns:
+      - name: size_id
+        description: "Unique identifier for the size."
+        tests:
+          - not_null
+          - unique
