@@ -42,6 +42,8 @@ Run Astro dev start from the main folder to create Docker containers with Apache
 
 Once the process completes, navigate to the Airflow UI at http://localhost:8088. Go to Admin > Connections and create connections for your PostgreSQL and GCP. Name these connections postgres_default and gcp, respectively. Ensure you provide your personal arguments for these connections.
 
+![Dag Graph](images/dag.png)
+
 ### 5. Running the DAG
 
 With the setup complete, you're ready to run the bedsheets DAG. This DAG will perform the following tasks:
